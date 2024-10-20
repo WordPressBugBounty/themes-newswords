@@ -1,0 +1,27 @@
+/*
+Theme Name: NewsWords
+Theme URI: https://afthemes.com/products/newswords/
+Author: AF themes
+Author URI: https://afthemes.com
+Description: NewsWords is a child theme of CoverNews. The theme is coming with different main banner section layout as well as has introduced new badge color. More importantly, the child theme also added advertisement banner widget section, which will facilitates user to add widgets having ad scripts. Furthermore, the theme also altered some of the frontpage layout's default value. With the help of available customizer options along with widgets, you can implement layouts as a clean and minimal blogging site, sport blog, fashion blog, photography blog, wedding blog & magazine and even more. The theme is SEO friendly with optimized code and outstanding support.
+See Demo: https://demos.afthemes.com/covernews/newswords/
+Support: https://afthemes.com/supports/
+Template: covernews
+Version: 2.0.1
+Requires PHP: 5.6
+Tested up to: 6.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: newswords
+Tags: news, blog, entertainment, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+NewsWords WordPress Theme, Copyright 2018 AF themes
+NewsWords is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+body span.menu-description{
+    background: #0076b5;
+}
