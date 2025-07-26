@@ -11,14 +11,23 @@ Note: this function loads the parent stylesheet before, then child theme stylesh
 function newswords_enqueue_child_styles() {
     $min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
     $parent_style = 'covernews-style';
+    $newswords_version = wp_get_theme()->get('Version');
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap' . $min . '.css');
-    wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css' );
+    // wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style($parent_style, get_template_directory_uri() . '/style' . $min . '.css', array(), $newswords_version);
     wp_enqueue_style(
         'newswords',
         get_stylesheet_directory_uri() . '/style.css',
         array( 'bootstrap', $parent_style ),
         wp_get_theme()->get('Version') );
-
+        if (is_rtl()) {
+            wp_enqueue_style(
+                'morenews-rtl',
+                get_template_directory_uri() . '/rtl.css',
+                array($parent_style),
+                $newswords_version
+            );
+        }
 
 }
 add_action( 'wp_enqueue_scripts', 'newswords_enqueue_child_styles' );
