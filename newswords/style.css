@@ -7,9 +7,9 @@ Description: NewsWords is a child theme of CoverNews. The theme is coming with d
 See Demo: https://demos.afthemes.com/covernews/newswords/
 Support: https://afthemes.com/supports/
 Template: covernews
-Version: 2.1.0
+Version: 2.1.1
 Requires PHP: 5.6
-Tested up to: 6.9
+Tested up to: 7.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: newswords
@@ -24,4 +24,20 @@ NewsWords is distributed under the terms of the GNU GPL v2 or later.
 
 body span.menu-description{
     background: #0076b5;
+}
+.entry-content .wp-block-rss li a, 
+.entry-content .wp-block-categories a, 
+.entry-content .wp-block-archives a,
+.entry-content .wp-block-latest-comments li a, 
+.entry-content .wp-block-latest-posts li a, 
+.entry-content .wp-block-tag-cloud a,
+.entry-content .wp-block-page-list a,
+.entry-content .wp-block-navigation a,
+.entry-content .wp-block-query a,
+.entry-content .wp-block-post-title a,
+.entry-content .wp-block-post-excerpt__more-link,
+.entry-content .wp-block-post-comments-form a,
+.entry-content .wp-block-loginout a,
+.entry-content .wp-block-calendar tbody a {
+    color: inherit !important;
 }
